@@ -1,0 +1,11 @@
+.footer-appbar {
+    top: auto;
+    bottom: 0;
+    background-color: #ffaf1b !important; /* Ensures the background color */
+    color: #280003;
+}
+  
+  .footer-toolbar {
+    justify-content: center;
+  }
+  

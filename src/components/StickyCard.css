@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.sticky-card {
+    position: sticky;
+    top: 0;
+    width: 100%; /* Full width of the container */
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    transition: all 0.3s ease-in-out;
+    z-index: 1; /* Base z-index */
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .sticky-card-wrapper {
+    position: relative;
+    top: 0; /* Adjust for desired vertical offset */
+    width: 100%;
+  }
+  
+  .sticky-card-content {
+    background-color: #280003; /* Default background color */
+    color: #fff; /* Default text color */
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%; /* Width of the card content */
+    max-width: 600px; /* Maximum width of the card content */
+    height: auto; /* Height of the card content; DEFAULT 60VH */
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+    word-wrap: break-word;
+  }
+  
+  .sticky-card-heading {
+    margin: 0;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffaf1b;
+  }
+  
+  .sticky-card-subheading {
+    margin: 10px 0;
+    font-size: 1.5em;
+    font-weight: normal;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .sticky-card-divider {
+    width: 80%;
+    border: 0;
+    border-top: 1px dashed #fff;
+    margin: 20px 0;
+  }
+  
+  .sticky-card-content p {
+    margin: 0;
+    font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+  }
+
+  .sticky-card-list {
+    margin: 0;
+    padding-left: 20px;
+    line-height: 1.6;
+  }
+  
+  .sticky-card-list li::first-letter {
+    font-size: 1.3em; /* Larger font size for the first letter */
+    font-weight: bold; /* Bold the first letter */
+  }
+
+  /* Center the learn-more button */
+.sticky-card-content .learn-more-button {
+  align-self: center; /* Center the button */
+  background-color: #ffaf1b; /* New background color */
+  color: #280003;
+}
+
+.sticky-card-content .learn-more-button:hover {
+  background-color: #8a5c1e; /* Darker background color on hover */
+}
+
+.executive-board {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.executive-member {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.executive-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.executive-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.executive-name {
+  font-weight: bold;
+}
+
+.executive-title {
+  font-style: italic;
+}
+
+
+  /* Different background colors for distinction */
+.sticky-card:nth-child(1) .sticky-card-content {
+    margin-top: 5vh;
+  }
+  
+  .sticky-card:nth-child(2) .sticky-card-content {
+    margin-top: 15vh;
+  }
+  
+  .sticky-card:nth-child(3) .sticky-card-content {
+    margin-top: 25vh;
+    font-size: 1.2em;
+  }
+
+  .sticky-card:nth-child(4) .sticky-card-content {
+    margin-top: 35vh;
+  }
+ 
+  .sticky-card:nth-child(5) .sticky-card-content {
+    margin-top: 45vh;
+  }
+
+ .sticky-card:nth-child(6) .sticky-card-content {
+    margin-top: 55vh;
+  }
+
+  .sticky-card:nth-child(7) .sticky-card-content {
+    margin-top: 65vh;
+  }
+
+  .sticky-card:nth-child(8) .sticky-card-content {
+    margin-top: 75vh;
+  }
+  
+  /*.sticky-card.sticky-card-current {
+    z-index: 2; /* Bring the current card to the front */
+  
+  
+  .sticky-card.sticky-card-current .sticky-card-content {
+    transform: scale(1.10); /* Make the current scrolling card slightly larger */
+  }
+  
